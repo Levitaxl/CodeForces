@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InSearchofanEasyProblem {
+public class InSearchofanEasyProblem{
     
     public static void main(String[] args) { 
         String n;
