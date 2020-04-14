@@ -34,3 +34,63 @@ public class P1220A {
   }
     
 }
+
+/*
+10
+12
+sin
+im
+gye
+gap
+eul
+byeong
+jeong
+mu
+gi
+gyeong
+yu
+sul
+hae
+ja
+chuk
+in
+myo
+jin
+sa
+o
+mi
+sin
+14
+1
+2
+3
+4
+10
+11
+12
+13
+73
+2016
+2017
+2018
+2019
+2020
+
+
+*/
+/*
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n=Integer.parseInt(br.readLine()), m=Integer.parseInt(br.readLine());  
+        StringBuilder[] s1=new StringBuilder[n], s2=new StringBuilder[m];
+        
+        for(int i=0;i<n;i++) s1[i]=new StringBuilder(br.readLine());
+        for(int i=0;i<m;i++) s2[i]=new StringBuilder(br.readLine());
+        
+        int q=Integer.parseInt(br.readLine());
+        
+        int[] y = new int[q];
+      
+        for(int i=0; i<q; i++ )y[i]=Integer.parseInt(br.readLine());
+        for(int i=0; i<q; i++) System.out.println(s1[(y[i]-1)%n].append(s2[(y[i]-1)%m])); 
+
+*/
