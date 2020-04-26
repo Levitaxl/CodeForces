@@ -6,6 +6,7 @@ public class P1097A {
         String n,n2;
         Scanner entrada = new Scanner(System.in);
         
+        
         n = entrada.nextLine(); 
         n2 = entrada.nextLine();
         
