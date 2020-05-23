@@ -15,7 +15,6 @@ public class P748A {
     public static void main (String[] args) {
         Scanner entrada = new Scanner(System.in);
         int columns=entrada.nextInt(), rows=entrada.nextInt(),position=entrada.nextInt(),contPosition=1;
-        
        
                 
         for (int i = 1; i <=columns; i++) {
@@ -23,10 +22,10 @@ public class P748A {
                 for (int k = 0; k <= 1; k++) {
                     if(contPosition==position){  
                         if(contPosition%2!=0)System.out.println(i+" "+j+" "+"L");
-                        else System.out.println(i+" "+j+" "+"R");
-                        
+                        else System.out.println(i+" "+j+" "+"R");      
                     }
                     contPosition++;
+                    
                 }
                 
             }
