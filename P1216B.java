@@ -40,23 +40,16 @@ public class P1216B
     {  
     
         public int compare(Entry<Integer,Integer> o1, Entry<Integer,Integer> o2)   
-    {  
-        if (order)   
         {  
-        //compare two object and return an integer  
-            return o1.getValue().compareTo(o2.getValue());}   
-         else   
-        {  
-         return o2.getValue().compareTo(o1.getValue());  
+        //compare two object and return an integer 
+            if (order)  return o1.getValue().compareTo(o2.getValue()); 
+            else        return o2.getValue().compareTo(o1.getValue());  
         }  
-        }  
-        });  
+        
+    });  
         //prints the sorted HashMap  
         Map<Integer,Integer> sortedMap = new LinkedHashMap<Integer,Integer>();  
-        for (Entry<Integer,Integer> entry : list)   
-        {  
-        sortedMap.put(entry.getKey(), entry.getValue());  
-        }  
+        for (Entry<Integer,Integer> entry : list) sortedMap.put(entry.getKey(), entry.getValue());  
         printMap(sortedMap);  
 
     }  
@@ -69,10 +62,7 @@ public class P1216B
         int test=0;
     for (Entry<Integer,Integer> entry : map.entrySet())   
     {  
-       //System.out.print(entry.getKey() +"\t"+entry.getValue());
         int sum=entry.getValue()*(test)+1;
-        //System.out.println(entry.getKey()-1);
-        //System.out.println("sum:"+sum);
         total+= sum;
         //System
         if(entry.getValue()>=value && entry.getKey()>key) {
@@ -82,7 +72,6 @@ public class P1216B
         
         test++;
     }  
-    //total=total-((value*key));
     System.out.println(total);
     
     int cont=1;
